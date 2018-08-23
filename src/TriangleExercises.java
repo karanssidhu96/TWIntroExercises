@@ -12,4 +12,13 @@ public class TriangleExercises {
             easiestExerciseEver();
         }
     }
+
+    public void drawAVerticalLine(int numStars)
+    {
+        for (int i=0; i<numStars; i++)
+        {
+            easiestExerciseEver();
+            System.out.print("\n");
+        }
+    }
 }
