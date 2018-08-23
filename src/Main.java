@@ -10,5 +10,8 @@ public class Main {
         System.out.print("\n");
 
         te.drawAVerticalLine(5);
+        System.out.print("\n");
+
+        te.drawARightTriangle(3);
     }
 }
