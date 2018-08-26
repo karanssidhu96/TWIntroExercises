@@ -37,20 +37,48 @@ public class DiamondExercises {
                 spacesSplit = numberOfSpaces/2;
             }
 
-            for (int j=0; j<spacesSplit; j++)
-            {
-                printSpace();
-            }
-            for (int j=0; j<numberOfStars; j++)
-            {
-                printAsterisk();
-            }
-            for (int j=0; j<spacesSplit; j++)
-            {
-                printSpace();
-            }
+            drawTriangleRow(spacesSplit, numberOfStars);
             numberOfSpaces = numberOfSpaces - 2;
             System.out.print("\n");
         }
+    }
+
+    private void drawTriangleRow(int spacesSplit, int numberOfStars)
+    {
+        for (int j=0; j<spacesSplit; j++)
+        {
+            printSpace();
+        }
+        for (int j=0; j<numberOfStars; j++)
+        {
+            printAsterisk();
+        }
+        for (int j=0; j<spacesSplit; j++)
+        {
+            printSpace();
+        }
+    }
+
+    private void drawAnInvertedIsoscelesTriangle(int n)
+    {
+        int numberOfStars;
+        int numberOfSpaces = 2;
+        int spacesSplit;
+
+        for (int i=n; i>0; i--)
+        {
+            numberOfStars = calculateNumberOfAsterisks(i);
+            spacesSplit = numberOfSpaces/2;
+
+            drawTriangleRow(spacesSplit, numberOfStars);
+            numberOfSpaces = numberOfSpaces + 2;
+            System.out.print("\n");
+        }
+    }
+
+    public void drawADiamond(int n)
+    {
+        drawAnIsoscelesTriangle(n);
+        drawAnInvertedIsoscelesTriangle(n-1);
     }
 }
