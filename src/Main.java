@@ -4,6 +4,7 @@ public class Main {
 	    TriangleExercises te = new TriangleExercises();
 	    DiamondExercises de = new DiamondExercises();
 	    FizzBuzz fb = new FizzBuzz();
+	    PrimeFactors pf = new PrimeFactors();
 
 	    te.easiestExerciseEver();
 	    System.out.print("\n");
@@ -27,5 +28,9 @@ public class Main {
         System.out.print("\n");
 
         fb.run();
+        System.out.print("\n");
+
+        pf.generate(1);
+        pf.generate(30);
     }
 }
