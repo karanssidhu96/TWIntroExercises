@@ -12,10 +12,7 @@ public class DiamondExercises {
         System.out.print(ASTERISK);
     }
 
-    private int calculateNumberOfSpaces(int n)
-    {
-        return 2*n-2;
-    }
+    private int calculateNumberOfSpaces(int n) { return 2*n-2; }
 
     private int calculateNumberOfAsterisks(int n)
     {
