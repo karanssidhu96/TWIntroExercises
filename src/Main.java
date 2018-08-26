@@ -20,5 +20,9 @@ public class Main {
         System.out.print("\n");
 
         de.drawADiamond(3);
+        System.out.print("\n");
+
+        de.drawADiamondWithAName(3, "Karan");
+        System.out.print("\n");
     }
 }

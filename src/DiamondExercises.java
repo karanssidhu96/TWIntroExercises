@@ -59,10 +59,10 @@ public class DiamondExercises {
         }
     }
 
-    private void drawAnInvertedIsoscelesTriangle(int n)
+    private void drawAnInvertedIsoscelesTriangle(int n, boolean withName)
     {
         int numberOfStars;
-        int numberOfSpaces = 2;
+        int numberOfSpaces = withName? 0 : 2;
         int spacesSplit;
 
         for (int i=n; i>0; i--)
@@ -79,6 +79,13 @@ public class DiamondExercises {
     public void drawADiamond(int n)
     {
         drawAnIsoscelesTriangle(n);
-        drawAnInvertedIsoscelesTriangle(n-1);
+        drawAnInvertedIsoscelesTriangle(n-1, false);
+    }
+
+    public void drawADiamondWithAName(int n, String name)
+    {
+        drawAnIsoscelesTriangle(n-1);
+        System.out.println(name);
+        drawAnInvertedIsoscelesTriangle(n-1, true);
     }
 }
