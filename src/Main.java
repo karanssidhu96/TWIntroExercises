@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
 	    TriangleExercises te = new TriangleExercises();
 	    DiamondExercises de = new DiamondExercises();
+	    FizzBuzz fb = new FizzBuzz();
 
 	    te.easiestExerciseEver();
 	    System.out.print("\n");
@@ -24,5 +25,7 @@ public class Main {
 
         de.drawADiamondWithAName(3, "Karan");
         System.out.print("\n");
+
+        fb.run();
     }
 }
